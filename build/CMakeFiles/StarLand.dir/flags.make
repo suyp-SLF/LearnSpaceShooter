@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/opt/sdl2/include
+CXX_INCLUDES = -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2
 
 CXX_FLAGSarm64 = -g -arch arm64
 

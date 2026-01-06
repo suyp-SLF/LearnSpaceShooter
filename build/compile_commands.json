@@ -1,7 +1,7 @@
 [
 {
   "directory": "/Users/suyp/C++/Projects/StarLand/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/opt/sdl2/include -g -arch arm64 -o CMakeFiles/StarLand.dir/main.cpp.o -c /Users/suyp/C++/Projects/StarLand/main.cpp",
+  "command": "/usr/bin/clang++  -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -g -arch arm64 -o CMakeFiles/StarLand.dir/main.cpp.o -c /Users/suyp/C++/Projects/StarLand/main.cpp",
   "file": "/Users/suyp/C++/Projects/StarLand/main.cpp",
   "output": "CMakeFiles/StarLand.dir/main.cpp.o"
 }

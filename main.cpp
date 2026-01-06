@@ -1,5 +1,5 @@
 #include <iostream>
-#include <sdl.h>
+#include <SDL.h>
 
 int main(int, char**) {
 

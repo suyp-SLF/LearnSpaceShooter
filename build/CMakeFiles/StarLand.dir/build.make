@@ -95,6 +95,8 @@ StarLand_EXTERNAL_OBJECTS =
 
 StarLand: CMakeFiles/StarLand.dir/main.cpp.o
 StarLand: CMakeFiles/StarLand.dir/build.make
+StarLand: /opt/homebrew/Cellar/sdl2/2.32.10/lib/libSDL2.dylib
+StarLand: /opt/homebrew/Cellar/sdl2/2.32.10/lib/libSDL2main.a
 StarLand: CMakeFiles/StarLand.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable StarLand"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StarLand.dir/link.txt --verbose=$(VERBOSE)

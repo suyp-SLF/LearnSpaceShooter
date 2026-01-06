@@ -11,9 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"link_directories",
-			"target_link_libraries",
-			"include_directories"
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -27,25 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 5,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 9,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 4,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -55,6 +41,17 @@
 		"major" : 2,
 		"minor" : 9
 	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "SDL2::SDL2::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "SDL2::SDL2main::@6890427a1f51a3e7e1df"
+		}
+	],
 	"compileGroups" : 
 	[
 		{
@@ -67,8 +64,9 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
-					"path" : "/opt/homebrew/opt/sdl2/include"
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2"
 				}
 			],
 			"language" : "CXX",
@@ -93,21 +91,21 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/opt/homebrew/opt/sdl2/lib",
+				"fragment" : "-L/opt/homebrew/Cellar/sdl2/2.32.10/lib",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/opt/homebrew/opt/sdl2/lib",
+				"fragment" : "-Wl,-rpath,/opt/homebrew/Cellar/sdl2/2.32.10/lib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lSDL2",
+				"backtrace" : 2,
+				"fragment" : "/opt/homebrew/Cellar/sdl2/2.32.10/lib/libSDL2.dylib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lSDL2main",
+				"backtrace" : 2,
+				"fragment" : "/opt/homebrew/Cellar/sdl2/2.32.10/lib/libSDL2main.a",
 				"role" : "libraries"
 			}
 		],
@@ -116,12 +114,12 @@
 	"linkLibraries" : 
 	[
 		{
-			"backtrace" : 3,
-			"fragment" : "SDL2"
+			"backtrace" : 2,
+			"id" : "SDL2::SDL2::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 3,
-			"fragment" : "SDL2main"
+			"backtrace" : 2,
+			"id" : "SDL2::SDL2main::@6890427a1f51a3e7e1df"
 		}
 	],
 	"name" : "StarLand",
