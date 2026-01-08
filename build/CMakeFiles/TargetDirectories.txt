@@ -1,3 +1,3 @@
-/Users/suyp/C++/Projects/StarLand/build/CMakeFiles/StarLand.dir
+/Users/suyp/C++/Projects/StarLand/build/CMakeFiles/StarLand-Darwin.dir
 /Users/suyp/C++/Projects/StarLand/build/CMakeFiles/edit_cache.dir
 /Users/suyp/C++/Projects/StarLand/build/CMakeFiles/rebuild_cache.dir

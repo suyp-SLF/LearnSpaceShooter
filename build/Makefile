@@ -117,41 +117,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named StarLand
+# Target rules for targets named StarLand-Darwin
 
 # Build rule for target.
-StarLand: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 StarLand
-.PHONY : StarLand
+StarLand-Darwin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 StarLand-Darwin
+.PHONY : StarLand-Darwin
 
 # fast build rule for target.
-StarLand/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand.dir/build.make CMakeFiles/StarLand.dir/build
-.PHONY : StarLand/fast
+StarLand-Darwin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/build
+.PHONY : StarLand-Darwin/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand.dir/build.make CMakeFiles/StarLand.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand.dir/build.make CMakeFiles/StarLand.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand.dir/build.make CMakeFiles/StarLand.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
+src/SceneMain.o: src/SceneMain.cpp.o
+.PHONY : src/SceneMain.o
+
+# target to build an object file
+src/SceneMain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o
+.PHONY : src/SceneMain.cpp.o
+
+src/SceneMain.i: src/SceneMain.cpp.i
+.PHONY : src/SceneMain.i
+
+# target to preprocess a source file
+src/SceneMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.i
+.PHONY : src/SceneMain.cpp.i
+
+src/SceneMain.s: src/SceneMain.cpp.s
+.PHONY : src/SceneMain.s
+
+# target to generate assembly for a file
+src/SceneMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.s
+.PHONY : src/SceneMain.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -161,10 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... StarLand"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... StarLand-Darwin"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/SceneMain.o"
+	@echo "... src/SceneMain.i"
+	@echo "... src/SceneMain.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

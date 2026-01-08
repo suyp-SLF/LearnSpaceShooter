@@ -1,0 +1,303 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FLAC::FLAC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FLAC__FLAC-Debug-146d665c28b6ddb3ef5f.json",
+					"name" : "FLAC::FLAC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FluidSynth::libfluidsynth::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FluidSynth__libfluidsynth-Debug-bc43e5cf9ba8d13342b4.json",
+					"name" : "FluidSynth::libfluidsynth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "JPEG::JPEG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-JPEG__JPEG-Debug-fd3ff461f2c38867b20b.json",
+					"name" : "JPEG::JPEG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MPG123::libmpg123::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MPG123__libmpg123-Debug-8e7df73a74994cb790f7.json",
+					"name" : "MPG123::libmpg123",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OpusFile::opusfile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OpusFile__opusfile-Debug-62066eadcb9b5b9aa743.json",
+					"name" : "OpusFile::opusfile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PNG::PNG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PNG__PNG-Debug-549827ec136131932af6.json",
+					"name" : "PNG::PNG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2::SDL2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2__SDL2-Debug-296f862ede34467658a1.json",
+					"name" : "SDL2::SDL2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2::SDL2-static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2__SDL2-static-Debug-108bc684387ef2f16b05.json",
+					"name" : "SDL2::SDL2-static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2::SDL2main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2__SDL2main-Debug-4b0eb91c16db676f84f0.json",
+					"name" : "SDL2::SDL2main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2::SDL2test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2__SDL2test-Debug-62cdb4b8498f9ad7dfda.json",
+					"name" : "SDL2::SDL2test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2_image::SDL2_image::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2_image__SDL2_image-Debug-6a677661e5122f5ec765.json",
+					"name" : "SDL2_image::SDL2_image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2_image::SDL2_image-static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2_image__SDL2_image-static-Debug-fd032c318786473aacee.json",
+					"name" : "SDL2_image::SDL2_image-static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2_mixer::SDL2_mixer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2_mixer__SDL2_mixer-Debug-a852bf26941dd1f82582.json",
+					"name" : "SDL2_mixer::SDL2_mixer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2_mixer::SDL2_mixer-static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2_mixer__SDL2_mixer-static-Debug-b9b83a599097e919f663.json",
+					"name" : "SDL2_mixer::SDL2_mixer-static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2_ttf::SDL2_ttf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2_ttf__SDL2_ttf-Debug-793597fd842818432a7c.json",
+					"name" : "SDL2_ttf::SDL2_ttf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDL2_ttf::SDL2_ttf-static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDL2_ttf__SDL2_ttf-static-Debug-fa0c275e2e4b234fdaed.json",
+					"name" : "SDL2_ttf::SDL2_ttf-static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TIFF::CXX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TIFF__CXX-Debug-27524e8a5b14841a99df.json",
+					"name" : "TIFF::CXX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TIFF::TIFF::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TIFF__TIFF-Debug-f31731ad5a92bf7ae10c.json",
+					"name" : "TIFF::TIFF",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Vorbis::vorbisfile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Vorbis__vorbisfile-Debug-73466d3bf86d5ae4d0a2.json",
+					"name" : "Vorbis::vorbisfile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WavPack::WavPack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WavPack__WavPack-Debug-27e7de1aea342d9f356a.json",
+					"name" : "WavPack::WavPack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WebP::webp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WebP__webp-Debug-2d3d5d6c11547c7f8ae3.json",
+					"name" : "WebP::webp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WebP::webpdemux::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WebP__webpdemux-Debug-734e08fd6e481e805db0.json",
+					"name" : "WebP::webpdemux",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZLIB::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZLIB__ZLIB-Debug-f07b16991a6479d55178.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "avif::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-avif-Debug-31579d526cc89e0f0793.json",
+					"name" : "avif",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libjxl::libjxl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libjxl__libjxl-Debug-12e76d1129af7a85b1bb.json",
+					"name" : "libjxl::libjxl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libxmp::libxmp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libxmp__libxmp-Debug-757b9e65b8232b3a6356.json",
+					"name" : "libxmp::libxmp",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "StarLand",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "StarLand-Darwin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StarLand-Darwin-Debug-2eaa726c1fd752f576e3.json",
+					"name" : "StarLand-Darwin",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/suyp/C++/Projects/StarLand/build",
+		"source" : "/Users/suyp/C++/Projects/StarLand"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

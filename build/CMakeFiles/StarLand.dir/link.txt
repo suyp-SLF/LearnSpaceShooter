@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/StarLand.dir/main.cpp.o -o StarLand   -L/opt/homebrew/opt/sdl2/lib  -Wl,-rpath,/opt/homebrew/opt/sdl2/lib -lSDL2 -lSDL2main
