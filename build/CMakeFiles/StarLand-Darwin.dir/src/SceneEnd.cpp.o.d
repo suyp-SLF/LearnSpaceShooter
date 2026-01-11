@@ -1,7 +1,7 @@
-CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o: \
-  /Users/suyp/C++/Projects/StarLand/src/main.cpp \
-  /Users/suyp/C++/Projects/StarLand/src/Game.h \
-  /Users/suyp/C++/Projects/StarLand/src/Object.h \
+CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o: \
+  /Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp \
+  /Users/suyp/C++/Projects/StarLand/src/SceneEnd.h \
+  /Users/suyp/C++/Projects/StarLand/src/Scene.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_main.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_stdinc.h \
@@ -269,7 +269,6 @@ CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_version.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_locale.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_misc.h \
-  /Users/suyp/C++/Projects/StarLand/src/Scene.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -538,4 +537,6 @@ CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/empty.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/size.h \
+  /Users/suyp/C++/Projects/StarLand/src/Game.h \
+  /Users/suyp/C++/Projects/StarLand/src/Object.h \
   /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2/SDL_ttf.h

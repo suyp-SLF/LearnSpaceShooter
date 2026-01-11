@@ -9,7 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/suyp/C++/Projects/StarLand/src/Game.cpp" "CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o" "gcc" "CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o.d"
+  "/Users/suyp/C++/Projects/StarLand/src/Scene.cpp" "CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o" "gcc" "CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o.d"
+  "/Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp" "CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o" "gcc" "CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o.d"
   "/Users/suyp/C++/Projects/StarLand/src/SceneMain.cpp" "CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o" "gcc" "CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o.d"
+  "/Users/suyp/C++/Projects/StarLand/src/SceneTitle.cpp" "CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o" "gcc" "CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o.d"
   "/Users/suyp/C++/Projects/StarLand/src/main.cpp" "CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o" "gcc" "CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o.d"
   )
 

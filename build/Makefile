@@ -153,6 +153,54 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Scene.o: src/Scene.cpp.o
+.PHONY : src/Scene.o
+
+# target to build an object file
+src/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o
+.PHONY : src/Scene.cpp.o
+
+src/Scene.i: src/Scene.cpp.i
+.PHONY : src/Scene.i
+
+# target to preprocess a source file
+src/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.i
+.PHONY : src/Scene.cpp.i
+
+src/Scene.s: src/Scene.cpp.s
+.PHONY : src/Scene.s
+
+# target to generate assembly for a file
+src/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.s
+.PHONY : src/Scene.cpp.s
+
+src/SceneEnd.o: src/SceneEnd.cpp.o
+.PHONY : src/SceneEnd.o
+
+# target to build an object file
+src/SceneEnd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o
+.PHONY : src/SceneEnd.cpp.o
+
+src/SceneEnd.i: src/SceneEnd.cpp.i
+.PHONY : src/SceneEnd.i
+
+# target to preprocess a source file
+src/SceneEnd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.i
+.PHONY : src/SceneEnd.cpp.i
+
+src/SceneEnd.s: src/SceneEnd.cpp.s
+.PHONY : src/SceneEnd.s
+
+# target to generate assembly for a file
+src/SceneEnd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.s
+.PHONY : src/SceneEnd.cpp.s
+
 src/SceneMain.o: src/SceneMain.cpp.o
 .PHONY : src/SceneMain.o
 
@@ -176,6 +224,30 @@ src/SceneMain.s: src/SceneMain.cpp.s
 src/SceneMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.s
 .PHONY : src/SceneMain.cpp.s
+
+src/SceneTitle.o: src/SceneTitle.cpp.o
+.PHONY : src/SceneTitle.o
+
+# target to build an object file
+src/SceneTitle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o
+.PHONY : src/SceneTitle.cpp.o
+
+src/SceneTitle.i: src/SceneTitle.cpp.i
+.PHONY : src/SceneTitle.i
+
+# target to preprocess a source file
+src/SceneTitle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.i
+.PHONY : src/SceneTitle.cpp.i
+
+src/SceneTitle.s: src/SceneTitle.cpp.s
+.PHONY : src/SceneTitle.s
+
+# target to generate assembly for a file
+src/SceneTitle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.s
+.PHONY : src/SceneTitle.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -213,9 +285,18 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/Scene.o"
+	@echo "... src/Scene.i"
+	@echo "... src/Scene.s"
+	@echo "... src/SceneEnd.o"
+	@echo "... src/SceneEnd.i"
+	@echo "... src/SceneEnd.s"
 	@echo "... src/SceneMain.o"
 	@echo "... src/SceneMain.i"
 	@echo "... src/SceneMain.s"
+	@echo "... src/SceneTitle.o"
+	@echo "... src/SceneTitle.i"
+	@echo "... src/SceneTitle.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

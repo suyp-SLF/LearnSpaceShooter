@@ -5,9 +5,10 @@
 #include "Object.h"
 
 #include <list>
+#include <map>
 #include <random>
-
-class Game; // forward declaration
+#include <SDL_mixer.h>
+#include <SDL_ttf.h>
 
 class SceneMain : public Scene
 {
@@ -21,19 +22,14 @@ public:
     void init() override;
     void clean() override;
 
-    void keyboardControl(float deltaTime);
-    void shoot();
-    void shootEnemy(Enemy *enemy);
-    void updateProjectiles(float deltaTime);
-    void updateEnemies(float deltaTime);
-    void updateProjectileEnemy(float deltaTime);
-    void renderProjectiles();
-    void renderEnemies();
-    void renderProjectileEnemy();
-    void generateEnemies();
+
+
+    
 private:
-    Game &game;
     Player player;
+    TTF_Font *scoreFont;
+    int score = 0;
+    float timerEnd = 0;
 
     std::random_device rd;
     std::mt19937 gen;
@@ -48,6 +44,38 @@ private:
     ProjectileEnemy projectileEnemyTemp;
     std::list<ProjectileEnemy*> projectilesEnemy;
 
+    //爆炸帧动画
+    Explosion explosionTemp;
+    std::list<Explosion*> explosions;
+    //道具
+    Item healthItemTemp;
+    std::list<Item*> items;
+    //声音容器
+    std::map<std::string, Mix_Chunk*> soundMap;
+
+    //血量
+    SDL_Texture* healthBar;
+    //渲染
+    void renderProjectiles();
+    void renderEnemies();
+    void renderProjectileEnemy();
+    void renderExplosions();
+    void renderItems();
+    
+    void renderUI();
+    //更新
+    void generateEnemies();
+    void updateProjectiles(float deltaTime);
+    void updateEnemies(float deltaTime);
+    void updateProjectileEnemy(float deltaTime);
+    void updateExplosions();
+    void updateItems(float deltaTime);
+
+    void keyboardControl(float deltaTime);
+    void shoot();
+    void shootEnemy(Enemy *enemy);
+    
+    void changeSeceneDelayed(float deltaTime);
 
 };
 #endif // SCENE_MAIN_H

@@ -100,10 +100,24 @@ CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suyp/C++/Projects/StarLand/src/Game.cpp -o CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.s
 
+CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o: CMakeFiles/StarLand-Darwin.dir/flags.make
+CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o: /Users/suyp/C++/Projects/StarLand/src/SceneTitle.cpp
+CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o: CMakeFiles/StarLand-Darwin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o -MF CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o.d -o CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/SceneTitle.cpp
+
+CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suyp/C++/Projects/StarLand/src/SceneTitle.cpp > CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.i
+
+CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suyp/C++/Projects/StarLand/src/SceneTitle.cpp -o CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.s
+
 CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o: CMakeFiles/StarLand-Darwin.dir/flags.make
 CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o: /Users/suyp/C++/Projects/StarLand/src/SceneMain.cpp
 CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o: CMakeFiles/StarLand-Darwin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o -MF CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o.d -o CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/SceneMain.cpp
 
 CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.i: cmake_force
@@ -114,25 +128,59 @@ CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suyp/C++/Projects/StarLand/src/SceneMain.cpp -o CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.s
 
+CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o: CMakeFiles/StarLand-Darwin.dir/flags.make
+CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o: /Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp
+CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o: CMakeFiles/StarLand-Darwin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o -MF CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o.d -o CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp
+
+CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp > CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.i
+
+CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp -o CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.s
+
+CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o: CMakeFiles/StarLand-Darwin.dir/flags.make
+CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o: /Users/suyp/C++/Projects/StarLand/src/Scene.cpp
+CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o: CMakeFiles/StarLand-Darwin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o -MF CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o.d -o CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/Scene.cpp
+
+CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suyp/C++/Projects/StarLand/src/Scene.cpp > CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.i
+
+CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suyp/C++/Projects/StarLand/src/Scene.cpp -o CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.s
+
 # Object files for target StarLand-Darwin
 StarLand__Darwin_OBJECTS = \
 "CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o" \
 "CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o" \
-"CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o"
+"CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o" \
+"CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o" \
+"CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o" \
+"CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o"
 
 # External object files for target StarLand-Darwin
 StarLand__Darwin_EXTERNAL_OBJECTS =
 
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o
+/Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o
+/Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o
+/Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/build.make
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: /opt/homebrew/Cellar/sdl2/2.32.10/lib/libSDL2.dylib
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: /opt/homebrew/Cellar/sdl2_image/2.8.8/lib/libSDL2_image.dylib
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/lib/libSDL2_mixer.dylib
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: /opt/homebrew/Cellar/sdl2_ttf/2.24.0/lib/libSDL2_ttf.dylib
 /Users/suyp/C++/Projects/StarLand/StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /Users/suyp/C++/Projects/StarLand/StarLand-Darwin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /Users/suyp/C++/Projects/StarLand/StarLand-Darwin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StarLand-Darwin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

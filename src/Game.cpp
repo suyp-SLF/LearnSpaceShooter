@@ -1,10 +1,71 @@
 #include "Game.h"
-#include "SceneMain.h"
+#include "SceneTitle.h"
+
 #include <SDL.h>
 #include <SDL_image.h>
+#include <SDL_ttf.h>
+#include <SDL_mixer.h>
 
 Game::Game()
 {
+}
+
+void Game::updateBackground(float deltaTime)
+{
+    // 远处的背景
+    farBackground.offset.y += farBackground.speed * deltaTime;
+    if (farBackground.offset.y >= farBackground.height)
+    {
+        farBackground.offset.y -= farBackground.height;
+    }
+    // 近处的背景
+    nearBackground.offset.y += nearBackground.speed * deltaTime;
+    if (nearBackground.offset.y >= nearBackground.height)
+    {
+        nearBackground.offset.y -= nearBackground.height;
+    }
+}
+
+void Game::renderBackground()
+{
+ // 渲染远处背景,循环
+    for (int i = 0; i <= getWindowHeight(); i += farBackground.height)
+    {
+        SDL_Rect farBackgroundRect = {
+            0,
+            farBackground.offset.y + i,
+            farBackground.width,
+            farBackground.height};
+        SDL_RenderCopy(getRenderer(), farBackground.texture, NULL, &farBackgroundRect);
+        for (int i = -getWindowHeight(); i <= getWindowWidth(); i += farBackground.width)
+        {
+            SDL_Rect farBackgroundRect = {
+                i,
+                farBackground.offset.x + i,
+                farBackground.width,
+                farBackground.height};
+            SDL_RenderCopy(getRenderer(), farBackground.texture, NULL, &farBackgroundRect);
+        }
+    }
+    // 渲染近处背景,循环
+    for (int i = -getWindowHeight(); i <= getWindowHeight(); i += nearBackground.height)
+    {
+        SDL_Rect nearBackgroundRect = {
+            0,
+            nearBackground.offset.y + i,
+            nearBackground.width,
+            nearBackground.height};
+        SDL_RenderCopy(getRenderer(), nearBackground.texture, NULL, &nearBackgroundRect);
+        for (int i = 0; i <= getWindowWidth(); i += nearBackground.width)
+        {
+            SDL_Rect nearBackgroundRect = {
+                i,
+                nearBackground.offset.x + i,
+                nearBackground.width,
+                nearBackground.height};
+            SDL_RenderCopy(getRenderer(), nearBackground.texture, NULL, &nearBackgroundRect);
+        }
+    }
 }
 
 Game::~Game()
@@ -62,8 +123,30 @@ void Game::init()
         SDL_LogDebug(SDL_LOG_CATEGORY_ERROR, "IMG_Init Error: %s\n", IMG_GetError());
         isRunning = false;
     }
+    //ttf初始化
+    if (TTF_Init() != 0)
+    {
+        SDL_LogDebug(SDL_LOG_CATEGORY_ERROR, "TTF_Init Error: %s\n", TTF_GetError());
+        isRunning = false;
+    }
+    // mixer初始化
+    if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0)
+    {
+        SDL_LogDebug(SDL_LOG_CATEGORY_ERROR, "Mix_OpenAudio Error: %s\n", Mix_GetError());
+        isRunning = false;
+    }
+    // 远处背景
+    farBackground.texture = IMG_LoadTexture(getRenderer(), "assets/image/Stars-B.png");
+    SDL_QueryTexture(farBackground.texture, NULL, NULL, &farBackground.width, &farBackground.height);
+    farBackground.speed = 50;
+    nearBackground.texture = IMG_LoadTexture(getRenderer(), "assets/image/Stars-A.png");
+    SDL_QueryTexture(nearBackground.texture, NULL, NULL, &nearBackground.width, &nearBackground.height);
+    nearBackground.speed = 100;
+    //初始化字体
+    fontTitle = TTF_OpenFont("assets/font/VonwaonBitmap-16px.ttf", 64);
+    fontText = TTF_OpenFont("assets/font/VonwaonBitmap-12px.ttf", 24);
     //制定当前场景
-    currentScene = new SceneMain();
+    currentScene = new SceneTitle();
     currentScene ->init();
 }
 
@@ -75,9 +158,19 @@ void Game::clean()
         delete currentScene;
     }
     IMG_Quit();
+    TTF_Quit();
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
+
+    if (farBackground.texture != nullptr)
+    {
+        SDL_DestroyTexture(farBackground.texture); // 远景
+    }
+    if (nearBackground.texture != nullptr)
+    {
+        SDL_DestroyTexture(nearBackground.texture); // 近景
+    }
 }
 
 void Game::changeScene(Scene *scene)
@@ -107,14 +200,29 @@ void Game::handleEvent(SDL_Event *event)
 void Game::update(float deltaTime)
 {
     currentScene->update(deltaTime);
+    updateBackground(deltaTime);      // 更新背景
+    
 }
 
 void Game::render()
 {
     // 清空
     SDL_RenderClear(renderer);
-
+    renderBackground();      // 渲染背景
     currentScene->render();
     // 显示更新
     SDL_RenderPresent(renderer);
+}
+
+void Game::setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color color)
+{
+    SDL_Surface *surface = TTF_RenderUTF8_Solid(font, text.c_str(), color);
+    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
+    SDL_Rect rect;
+    SDL_QueryTexture(texture, NULL, NULL, &rect.w, &rect.h);
+    rect.x = (windowWidth - rect.w) / 2;
+    rect.y = PosY * windowHeight;
+    SDL_RenderCopy(renderer, texture, NULL, &rect);
+    SDL_DestroyTexture(texture);
+    SDL_FreeSurface(surface);
 }

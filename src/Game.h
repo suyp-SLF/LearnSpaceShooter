@@ -1,8 +1,12 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "Object.h"
 #include "Scene.h"
+
+#include <string>
 #include <SDL.h>
+#include <SDL_ttf.h>
 
 class Game
 {
@@ -22,11 +26,27 @@ public:
     void handleEvent(SDL_Event* event);
     void update(float deltaTime);
     void render();
+    // 其他
+    // 中心设置text
+    void setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color color);;
 
+    //getter
     SDL_Renderer* getRenderer() { return renderer; }
     SDL_Window* getWindow() { return window; }
     int getWindowWidth() { return windowWidth; }
     int getWindowHeight() { return windowHeight; }
+
+    void setScore(int score) { this->score = score; };
+    //获取分数
+    int getScore() {return score; };
+
+    //设置字体
+    void setFontTitle(TTF_Font* fontTitle);
+    void setFontText(TTF_Font* fontText);
+
+    //设置字体
+    TTF_Font* fontTitle;
+    TTF_Font* fontText;
 private:
     Game();
     Game(const Game&) = delete;
@@ -36,11 +56,21 @@ private:
     Scene* currentScene = nullptr;
     SDL_Window* window = nullptr;
     SDL_Renderer* renderer = nullptr;
-    int windowWidth = 300;
-    int windowHeight = 400;
+    int windowWidth = 600;
+    int windowHeight = 800;
+
+    //远处背景
+    Background farBackground;
+    Background nearBackground;
     //FPS
     int FPS = 60;
     Uint32 frameTime = 1000 / FPS;
     float deltaTime = 0;
+    //分数,以及getset方法
+    int score = 0; //设置分数
+
+
+    void updateBackground(float deltaTime);
+    void renderBackground();
 };
 #endif // GAME_H
