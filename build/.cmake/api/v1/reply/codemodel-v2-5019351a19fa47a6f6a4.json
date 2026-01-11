@@ -270,7 +270,7 @@
 					[
 						0
 					],
-					"name" : "StarLand",
+					"name" : "SpachShooter",
 					"targetIndexes" : 
 					[
 						0
@@ -281,9 +281,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "StarLand-Darwin::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-StarLand-Darwin-Debug-22cd6265d6a1013b6af2.json",
-					"name" : "StarLand-Darwin",
+					"id" : "SpachShooter-Darwin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SpachShooter-Darwin-Debug-5bc8aded18127b527aad.json",
+					"name" : "SpachShooter-Darwin",
 					"projectIndex" : 0
 				}
 			]
@@ -292,8 +292,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/suyp/C++/Projects/StarLand/build",
-		"source" : "/Users/suyp/C++/Projects/StarLand"
+		"build" : "/Users/suyp/C++/Projects/LearnSpaceShooter/build",
+		"source" : "/Users/suyp/C++/Projects/LearnSpaceShooter"
 	},
 	"version" : 
 	{

@@ -8,7 +8,7 @@ void SceneEnd::init()
     // 判断是否打开文字输入模式
     if (!SDL_IsTextInputActive())
     {
-        // d打开
+        // 打开
         SDL_StartTextInput();
     }
     if (!SDL_IsTextInputActive())
@@ -20,6 +20,10 @@ void SceneEnd::init()
 
 void SceneEnd::update(float deltaTime)
 {
+    blinkTime -= deltaTime;
+    if (blinkTime < 0){
+        blinkTime = 0.5;
+    }
 }
 
 void SceneEnd::render()
@@ -66,7 +70,10 @@ void SceneEnd::renderPhase1()
     game.setCenterText(game.fontText, "你的得分是" + std::to_string(game.getScore()), 0.1, color);
     game.setCenterText(game.fontTitle, "GAMEOVER", 0.3, color);
     game.setCenterText(game.fontText, "请输入你的名字,按回车键提交", 0.5, color);
-    game.setCenterText(game.fontText, name, 0.7, color);
+    SDL_Point tailPos = game.setCenterText(game.fontText, name, 0.7, color);
+    if(blinkTime < 0.25){
+        game.setText(game.fontText, "_", tailPos.x + 1, tailPos.y, color);
+    }
 }
 
 void SceneEnd::renderPhase2()

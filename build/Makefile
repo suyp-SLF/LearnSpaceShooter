@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/suyp/C++/Projects/StarLand
+CMAKE_SOURCE_DIR = /Users/suyp/C++/Projects/LearnSpaceShooter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/suyp/C++/Projects/StarLand/build
+CMAKE_BINARY_DIR = /Users/suyp/C++/Projects/LearnSpaceShooter/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/StarLand/build/CMakeFiles /Users/suyp/C++/Projects/StarLand/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/LearnSpaceShooter/build/CMakeFiles /Users/suyp/C++/Projects/LearnSpaceShooter/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/StarLand/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/LearnSpaceShooter/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named StarLand-Darwin
+# Target rules for targets named SpachShooter-Darwin
 
 # Build rule for target.
-StarLand-Darwin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 StarLand-Darwin
-.PHONY : StarLand-Darwin
+SpachShooter-Darwin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SpachShooter-Darwin
+.PHONY : SpachShooter-Darwin
 
 # fast build rule for target.
-StarLand-Darwin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/build
-.PHONY : StarLand-Darwin/fast
+SpachShooter-Darwin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/build
+.PHONY : SpachShooter-Darwin/fast
 
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
 # target to build an object file
 src/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/Game.cpp.o
 .PHONY : src/Game.cpp.o
 
 src/Game.i: src/Game.cpp.i
@@ -142,7 +142,7 @@ src/Game.i: src/Game.cpp.i
 
 # target to preprocess a source file
 src/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/Game.cpp.i
 .PHONY : src/Game.cpp.i
 
 src/Game.s: src/Game.cpp.s
@@ -150,7 +150,7 @@ src/Game.s: src/Game.cpp.s
 
 # target to generate assembly for a file
 src/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
 src/Scene.o: src/Scene.cpp.o
@@ -158,7 +158,7 @@ src/Scene.o: src/Scene.cpp.o
 
 # target to build an object file
 src/Scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/Scene.cpp.o
 .PHONY : src/Scene.cpp.o
 
 src/Scene.i: src/Scene.cpp.i
@@ -166,7 +166,7 @@ src/Scene.i: src/Scene.cpp.i
 
 # target to preprocess a source file
 src/Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/Scene.cpp.i
 .PHONY : src/Scene.cpp.i
 
 src/Scene.s: src/Scene.cpp.s
@@ -174,7 +174,7 @@ src/Scene.s: src/Scene.cpp.s
 
 # target to generate assembly for a file
 src/Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/Scene.cpp.s
 .PHONY : src/Scene.cpp.s
 
 src/SceneEnd.o: src/SceneEnd.cpp.o
@@ -182,7 +182,7 @@ src/SceneEnd.o: src/SceneEnd.cpp.o
 
 # target to build an object file
 src/SceneEnd.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneEnd.cpp.o
 .PHONY : src/SceneEnd.cpp.o
 
 src/SceneEnd.i: src/SceneEnd.cpp.i
@@ -190,7 +190,7 @@ src/SceneEnd.i: src/SceneEnd.cpp.i
 
 # target to preprocess a source file
 src/SceneEnd.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneEnd.cpp.i
 .PHONY : src/SceneEnd.cpp.i
 
 src/SceneEnd.s: src/SceneEnd.cpp.s
@@ -198,7 +198,7 @@ src/SceneEnd.s: src/SceneEnd.cpp.s
 
 # target to generate assembly for a file
 src/SceneEnd.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneEnd.cpp.s
 .PHONY : src/SceneEnd.cpp.s
 
 src/SceneMain.o: src/SceneMain.cpp.o
@@ -206,7 +206,7 @@ src/SceneMain.o: src/SceneMain.cpp.o
 
 # target to build an object file
 src/SceneMain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneMain.cpp.o
 .PHONY : src/SceneMain.cpp.o
 
 src/SceneMain.i: src/SceneMain.cpp.i
@@ -214,7 +214,7 @@ src/SceneMain.i: src/SceneMain.cpp.i
 
 # target to preprocess a source file
 src/SceneMain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneMain.cpp.i
 .PHONY : src/SceneMain.cpp.i
 
 src/SceneMain.s: src/SceneMain.cpp.s
@@ -222,7 +222,7 @@ src/SceneMain.s: src/SceneMain.cpp.s
 
 # target to generate assembly for a file
 src/SceneMain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneMain.cpp.s
 .PHONY : src/SceneMain.cpp.s
 
 src/SceneTitle.o: src/SceneTitle.cpp.o
@@ -230,7 +230,7 @@ src/SceneTitle.o: src/SceneTitle.cpp.o
 
 # target to build an object file
 src/SceneTitle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneTitle.cpp.o
 .PHONY : src/SceneTitle.cpp.o
 
 src/SceneTitle.i: src/SceneTitle.cpp.i
@@ -238,7 +238,7 @@ src/SceneTitle.i: src/SceneTitle.cpp.i
 
 # target to preprocess a source file
 src/SceneTitle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneTitle.cpp.i
 .PHONY : src/SceneTitle.cpp.i
 
 src/SceneTitle.s: src/SceneTitle.cpp.s
@@ -246,7 +246,7 @@ src/SceneTitle.s: src/SceneTitle.cpp.s
 
 # target to generate assembly for a file
 src/SceneTitle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/SceneTitle.cpp.s
 .PHONY : src/SceneTitle.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -254,7 +254,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -262,7 +262,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -270,7 +270,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -281,7 +281,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... StarLand-Darwin"
+	@echo "... SpachShooter-Darwin"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

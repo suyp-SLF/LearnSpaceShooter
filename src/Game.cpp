@@ -214,7 +214,7 @@ void Game::render()
     SDL_RenderPresent(renderer);
 }
 
-void Game::setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color color)
+SDL_Point Game::setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color color)
 {
     SDL_Surface *surface = TTF_RenderUTF8_Solid(font, text.c_str(), color);
     SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
@@ -225,4 +225,19 @@ void Game::setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color
     SDL_RenderCopy(renderer, texture, NULL, &rect);
     SDL_DestroyTexture(texture);
     SDL_FreeSurface(surface);
+    return {rect.x + rect.w, rect.y};
+}
+
+SDL_Point Game::setText(TTF_Font *font, std::string text, float PosX, float PosY, SDL_Color color)
+{
+    SDL_Surface *surface = TTF_RenderUTF8_Solid(font, text.c_str(), color);
+    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
+    SDL_Rect rect;
+    SDL_QueryTexture(texture, NULL, NULL, &rect.w, &rect.h);
+    rect.x = PosX;
+    rect.y = PosY;
+    SDL_RenderCopy(renderer, texture, NULL, &rect);
+    SDL_DestroyTexture(texture);
+    SDL_FreeSurface(surface);
+    return {rect.x, rect.y};
 }

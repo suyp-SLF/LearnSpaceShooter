@@ -1,6 +1,6 @@
 #标题
 cmake_minimum_required(VERSION 3.10.0)
-project(StarLand VERSION 0.1.0 LANGUAGES C CXX)
+project(SpachShooter VERSION 0.1.0 LANGUAGES C CXX)
 
 #设置C++标准
 set(CMAKE_CXX_STANDARD 23)

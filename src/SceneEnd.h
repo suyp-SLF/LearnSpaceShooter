@@ -13,6 +13,7 @@ public:
     virtual void clean();
     virtual void handleEvent(SDL_Event* event);
 private:
+    float blinkTime = 0.5;
     std::string name = "";
     bool typing = true;
     void renderPhase1();

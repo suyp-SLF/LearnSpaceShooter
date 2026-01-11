@@ -5,6 +5,7 @@
 #include "Scene.h"
 
 #include <string>
+#include <map>
 #include <SDL.h>
 #include <SDL_ttf.h>
 
@@ -28,7 +29,8 @@ public:
     void render();
     // 其他
     // 中心设置text
-    void setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color color);;
+    SDL_Point setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color color);;
+    SDL_Point setText(TTF_Font *font, std::string text, float PosX, float PosY, SDL_Color color);
 
     //getter
     SDL_Renderer* getRenderer() { return renderer; }
@@ -41,12 +43,11 @@ public:
     int getScore() {return score; };
 
     //设置字体
-    void setFontTitle(TTF_Font* fontTitle);
-    void setFontText(TTF_Font* fontText);
-
-    //设置字体
     TTF_Font* fontTitle;
     TTF_Font* fontText;
+
+    //排名
+    std::map<int, std::string, std::greater<int>> rank;
 private:
     Game();
     Game(const Game&) = delete;

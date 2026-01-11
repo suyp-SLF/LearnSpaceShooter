@@ -1,2 +1,2 @@
-# Empty dependencies file for StarLand-Darwin.
+# Empty dependencies file for SpachShooter-Darwin.
 # This may be replaced when dependencies are built.

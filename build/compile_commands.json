@@ -1,38 +1,38 @@
 [
 {
-  "directory": "/Users/suyp/C++/Projects/StarLand/build",
-  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/StarLand/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/main.cpp",
-  "file": "/Users/suyp/C++/Projects/StarLand/src/main.cpp",
-  "output": "CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o"
+  "directory": "/Users/suyp/C++/Projects/LearnSpaceShooter/build",
+  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/LearnSpaceShooter/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/SpachShooter-Darwin.dir/src/main.cpp.o -c /Users/suyp/C++/Projects/LearnSpaceShooter/src/main.cpp",
+  "file": "/Users/suyp/C++/Projects/LearnSpaceShooter/src/main.cpp",
+  "output": "CMakeFiles/SpachShooter-Darwin.dir/src/main.cpp.o"
 },
 {
-  "directory": "/Users/suyp/C++/Projects/StarLand/build",
-  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/StarLand/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/Game.cpp",
-  "file": "/Users/suyp/C++/Projects/StarLand/src/Game.cpp",
-  "output": "CMakeFiles/StarLand-Darwin.dir/src/Game.cpp.o"
+  "directory": "/Users/suyp/C++/Projects/LearnSpaceShooter/build",
+  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/LearnSpaceShooter/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/SpachShooter-Darwin.dir/src/Game.cpp.o -c /Users/suyp/C++/Projects/LearnSpaceShooter/src/Game.cpp",
+  "file": "/Users/suyp/C++/Projects/LearnSpaceShooter/src/Game.cpp",
+  "output": "CMakeFiles/SpachShooter-Darwin.dir/src/Game.cpp.o"
 },
 {
-  "directory": "/Users/suyp/C++/Projects/StarLand/build",
-  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/StarLand/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/SceneTitle.cpp",
-  "file": "/Users/suyp/C++/Projects/StarLand/src/SceneTitle.cpp",
-  "output": "CMakeFiles/StarLand-Darwin.dir/src/SceneTitle.cpp.o"
+  "directory": "/Users/suyp/C++/Projects/LearnSpaceShooter/build",
+  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/LearnSpaceShooter/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/SpachShooter-Darwin.dir/src/SceneTitle.cpp.o -c /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneTitle.cpp",
+  "file": "/Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneTitle.cpp",
+  "output": "CMakeFiles/SpachShooter-Darwin.dir/src/SceneTitle.cpp.o"
 },
 {
-  "directory": "/Users/suyp/C++/Projects/StarLand/build",
-  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/StarLand/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/SceneMain.cpp",
-  "file": "/Users/suyp/C++/Projects/StarLand/src/SceneMain.cpp",
-  "output": "CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o"
+  "directory": "/Users/suyp/C++/Projects/LearnSpaceShooter/build",
+  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/LearnSpaceShooter/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/SpachShooter-Darwin.dir/src/SceneMain.cpp.o -c /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneMain.cpp",
+  "file": "/Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneMain.cpp",
+  "output": "CMakeFiles/SpachShooter-Darwin.dir/src/SceneMain.cpp.o"
 },
 {
-  "directory": "/Users/suyp/C++/Projects/StarLand/build",
-  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/StarLand/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp",
-  "file": "/Users/suyp/C++/Projects/StarLand/src/SceneEnd.cpp",
-  "output": "CMakeFiles/StarLand-Darwin.dir/src/SceneEnd.cpp.o"
+  "directory": "/Users/suyp/C++/Projects/LearnSpaceShooter/build",
+  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/LearnSpaceShooter/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/SpachShooter-Darwin.dir/src/SceneEnd.cpp.o -c /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneEnd.cpp",
+  "file": "/Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneEnd.cpp",
+  "output": "CMakeFiles/SpachShooter-Darwin.dir/src/SceneEnd.cpp.o"
 },
 {
-  "directory": "/Users/suyp/C++/Projects/StarLand/build",
-  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/StarLand/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o -c /Users/suyp/C++/Projects/StarLand/src/Scene.cpp",
-  "file": "/Users/suyp/C++/Projects/StarLand/src/Scene.cpp",
-  "output": "CMakeFiles/StarLand-Darwin.dir/src/Scene.cpp.o"
+  "directory": "/Users/suyp/C++/Projects/LearnSpaceShooter/build",
+  "command": "/usr/bin/clang++  -I/Users/suyp/C++/Projects/LearnSpaceShooter/include -isystem /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2 -isystem /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2 -g -std=gnu++2b -arch arm64 -Wall -Wextra -o CMakeFiles/SpachShooter-Darwin.dir/src/Scene.cpp.o -c /Users/suyp/C++/Projects/LearnSpaceShooter/src/Scene.cpp",
+  "file": "/Users/suyp/C++/Projects/LearnSpaceShooter/src/Scene.cpp",
+  "output": "CMakeFiles/SpachShooter-Darwin.dir/src/Scene.cpp.o"
 }
 ]

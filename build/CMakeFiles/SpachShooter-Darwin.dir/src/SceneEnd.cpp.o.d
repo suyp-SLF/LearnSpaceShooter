@@ -1,7 +1,7 @@
-CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o: \
-  /Users/suyp/C++/Projects/StarLand/src/main.cpp \
-  /Users/suyp/C++/Projects/StarLand/src/Game.h \
-  /Users/suyp/C++/Projects/StarLand/src/Object.h \
+CMakeFiles/SpachShooter-Darwin.dir/src/SceneEnd.cpp.o: \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneEnd.cpp \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneEnd.h \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/Scene.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_main.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_stdinc.h \
@@ -269,7 +269,6 @@ CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_version.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_locale.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_misc.h \
-  /Users/suyp/C++/Projects/StarLand/src/Scene.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -538,4 +537,30 @@ CMakeFiles/StarLand-Darwin.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/empty.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/size.h \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/Game.h \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/Object.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/three_way_comp_ref_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_function.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/erase_if_container.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_scalar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_null_pointer.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_const.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/in_place.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/auto_ptr.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const_ref.h \
   /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2/SDL_ttf.h

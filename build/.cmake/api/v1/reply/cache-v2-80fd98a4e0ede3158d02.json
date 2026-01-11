@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/suyp/C++/Projects/StarLand/build"
+			"value" : "/Users/suyp/C++/Projects/LearnSpaceShooter/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang++"
 		},
 		{
@@ -251,10 +251,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang"
 		},
 		{
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/suyp/C++/Projects/StarLand/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/suyp/C++/Projects/LearnSpaceShooter/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/suyp/C++/Projects/StarLand"
+			"value" : "/Users/suyp/C++/Projects/LearnSpaceShooter"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -859,7 +859,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "StarLand"
+			"value" : "SpachShooter"
 		},
 		{
 			"name" : "CMAKE_PROJECT_SPDX_LICENSE",
@@ -3306,7 +3306,7 @@
 			"value" : "/opt/homebrew/lib/cmake/SDL2_ttf"
 		},
 		{
-			"name" : "StarLand_BINARY_DIR",
+			"name" : "SpachShooter_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -3315,10 +3315,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/suyp/C++/Projects/StarLand/build"
+			"value" : "/Users/suyp/C++/Projects/LearnSpaceShooter/build"
 		},
 		{
-			"name" : "StarLand_IS_TOP_LEVEL",
+			"name" : "SpachShooter_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -3330,7 +3330,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "StarLand_SOURCE_DIR",
+			"name" : "SpachShooter_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -3339,7 +3339,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/suyp/C++/Projects/StarLand"
+			"value" : "/Users/suyp/C++/Projects/LearnSpaceShooter"
 		},
 		{
 			"name" : "TIFF_INCLUDE_DIR",

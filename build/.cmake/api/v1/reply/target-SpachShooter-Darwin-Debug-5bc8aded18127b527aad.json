@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/Users/suyp/C++/Projects/StarLand/StarLand-Darwin"
+			"path" : "/Users/suyp/C++/Projects/LearnSpaceShooter/SpachShooter-Darwin"
 		}
 	],
 	"backtrace" : 1,
@@ -95,7 +95,7 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/Users/suyp/C++/Projects/StarLand/include"
+					"path" : "/Users/suyp/C++/Projects/LearnSpaceShooter/include"
 				},
 				{
 					"backtrace" : 2,
@@ -138,7 +138,7 @@
 			]
 		}
 	],
-	"id" : "StarLand-Darwin::@6890427a1f51a3e7e1df",
+	"id" : "SpachShooter-Darwin::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -202,8 +202,8 @@
 			"id" : "SDL2_ttf::SDL2_ttf::@6890427a1f51a3e7e1df"
 		}
 	],
-	"name" : "StarLand-Darwin",
-	"nameOnDisk" : "StarLand-Darwin",
+	"name" : "SpachShooter-Darwin",
+	"nameOnDisk" : "SpachShooter-Darwin",
 	"paths" : 
 	{
 		"build" : ".",

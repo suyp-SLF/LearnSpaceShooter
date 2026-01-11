@@ -54,20 +54,20 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/suyp/C++/Projects/StarLand
+CMAKE_SOURCE_DIR = /Users/suyp/C++/Projects/LearnSpaceShooter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/suyp/C++/Projects/StarLand/build
+CMAKE_BINARY_DIR = /Users/suyp/C++/Projects/LearnSpaceShooter/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/StarLand-Darwin.dir/all
+all: CMakeFiles/SpachShooter-Darwin.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/StarLand-Darwin.dir/codegen
+codegen: CMakeFiles/SpachShooter-Darwin.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/StarLand-Darwin.dir/clean
+clean: CMakeFiles/SpachShooter-Darwin.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/StarLand-Darwin.dir
+# Target rules for target CMakeFiles/SpachShooter-Darwin.dir
 
 # All Build rule for target.
-CMakeFiles/StarLand-Darwin.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target StarLand-Darwin"
-.PHONY : CMakeFiles/StarLand-Darwin.dir/all
+CMakeFiles/SpachShooter-Darwin.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/suyp/C++/Projects/LearnSpaceShooter/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target SpachShooter-Darwin"
+.PHONY : CMakeFiles/SpachShooter-Darwin.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/StarLand-Darwin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/StarLand/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/StarLand-Darwin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/StarLand/build/CMakeFiles 0
-.PHONY : CMakeFiles/StarLand-Darwin.dir/rule
+CMakeFiles/SpachShooter-Darwin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/LearnSpaceShooter/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpachShooter-Darwin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suyp/C++/Projects/LearnSpaceShooter/build/CMakeFiles 0
+.PHONY : CMakeFiles/SpachShooter-Darwin.dir/rule
 
 # Convenience name for target.
-StarLand-Darwin: CMakeFiles/StarLand-Darwin.dir/rule
-.PHONY : StarLand-Darwin
+SpachShooter-Darwin: CMakeFiles/SpachShooter-Darwin.dir/rule
+.PHONY : SpachShooter-Darwin
 
 # codegen rule for target.
-CMakeFiles/StarLand-Darwin.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/suyp/C++/Projects/StarLand/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target StarLand-Darwin"
-.PHONY : CMakeFiles/StarLand-Darwin.dir/codegen
+CMakeFiles/SpachShooter-Darwin.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/suyp/C++/Projects/LearnSpaceShooter/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target SpachShooter-Darwin"
+.PHONY : CMakeFiles/SpachShooter-Darwin.dir/codegen
 
 # clean rule for target.
-CMakeFiles/StarLand-Darwin.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarLand-Darwin.dir/build.make CMakeFiles/StarLand-Darwin.dir/clean
-.PHONY : CMakeFiles/StarLand-Darwin.dir/clean
+CMakeFiles/SpachShooter-Darwin.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpachShooter-Darwin.dir/build.make CMakeFiles/SpachShooter-Darwin.dir/clean
+.PHONY : CMakeFiles/SpachShooter-Darwin.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

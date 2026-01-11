@@ -1,7 +1,7 @@
-CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o: \
-  /Users/suyp/C++/Projects/StarLand/src/SceneMain.cpp \
-  /Users/suyp/C++/Projects/StarLand/src/SceneMain.h \
-  /Users/suyp/C++/Projects/StarLand/src/Scene.h \
+CMakeFiles/SpachShooter-Darwin.dir/src/SceneTitle.cpp.o: \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneTitle.cpp \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneTitle.h \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/Scene.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_main.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_stdinc.h \
@@ -269,7 +269,8 @@ CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o: \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_version.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_locale.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_misc.h \
-  /Users/suyp/C++/Projects/StarLand/src/Object.h \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/SceneMain.h \
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/Object.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h \
@@ -725,7 +726,4 @@ CMakeFiles/StarLand-Darwin.dir/src/SceneMain.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/include/SDL2/SDL_mixer.h \
   /opt/homebrew/Cellar/sdl2_ttf/2.24.0/include/SDL2/SDL_ttf.h \
-  /Users/suyp/C++/Projects/StarLand/src/SceneTitle.h \
-  /Users/suyp/C++/Projects/StarLand/src/SceneEnd.h \
-  /Users/suyp/C++/Projects/StarLand/src/Game.h \
-  /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2/SDL_image.h
+  /Users/suyp/C++/Projects/LearnSpaceShooter/src/Game.h

@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/suyp/C++/Projects/StarLand/build/cmake_install.cmake"
+		"/Users/suyp/C++/Projects/LearnSpaceShooter/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
