@@ -28,8 +28,8 @@ git commit -m "Update game build: $(date +'%Y-%m-%d %H:%M:%S')"
 git push origin gh-pages
 
 # 4. 返回主目录提交源码（可选，但建议）
-cd ..
-echo "发布完成！别忘了提交你的 C++ 源码更新："
-git add .
-git commit -m "Source code changes for build $(date +'%Y-%m-%d')"
-git push origin main
+# cd ..
+# echo "发布完成！别忘了提交你的 C++ 源码更新："
+# git add .
+# git commit -m "Source code changes for build $(date +'%Y-%m-%d')"
+# git push origin main
