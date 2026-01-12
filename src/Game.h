@@ -1,3 +1,7 @@
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 #ifndef GAME_H
 #define GAME_H
 
@@ -20,6 +24,7 @@ public:
 
     ~Game();
     void run();
+    static void mainLoopWrapper(void* arg);
     void init();
     void clean();
     void changeScene(Scene* scene);
@@ -53,7 +58,7 @@ private:
     Game(const Game&) = delete;
     Game& operator=(const Game&) = delete;
 
-    bool isRunning = true; // C++11 新特性初始化
+    bool isRunning = true; // C++11 新特性
     Scene* currentScene = nullptr;
     SDL_Window* window = nullptr;
     SDL_Renderer* renderer = nullptr;

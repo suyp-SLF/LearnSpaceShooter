@@ -75,9 +75,14 @@ Game::~Game()
 
 void Game::run()
 {
+#ifdef __EMSCRIPTEN__
+    // 关键点：函数名必须是 emscripten_set_main_loop_arg
+    // 这样它才能接受你的 Game::mainLoopWrapper (带 void* 参数的静态函数)
+    emscripten_set_main_loop_arg(Game::mainLoopWrapper, this, 0, 1);
+#else
     while (isRunning)
     {
-        Uint32 frameStartTime = SDL_GetTicks();
+       Uint32 frameStartTime = SDL_GetTicks();
         SDL_Event event;
         handleEvent(&event);
         update(deltaTime);
@@ -93,6 +98,26 @@ void Game::run()
             deltaTime = frameDuration / 1000.0f;
         }
     }
+#endif
+}
+
+// 静态包装函数实现
+void Game::mainLoopWrapper(void* arg)
+{
+    // 使用 static 变量保留上次的时间戳
+    static Uint32 lastTime = SDL_GetTicks();
+    
+    Uint32 currentTime = SDL_GetTicks();
+    // 计算两帧之间的时间差（秒）
+    float deltaTime = (currentTime - lastTime) / 1000.0f;
+    lastTime = currentTime;
+
+    // 防止 deltaTime 过大（例如切后台后再回来）导致物理崩溃
+    if (deltaTime > 0.1f) deltaTime = 0.016f;
+    SDL_Event event;
+    Game::getInstance().handleEvent(&event);
+    Game::getInstance().update(deltaTime);
+    Game::getInstance().render();
 }
 
 void Game::init()
