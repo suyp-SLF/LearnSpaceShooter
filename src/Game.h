@@ -36,6 +36,7 @@ public:
     // 中心设置text
     SDL_Point setCenterText(TTF_Font *font, std::string text, float PosY, SDL_Color color);;
     SDL_Point setText(TTF_Font *font, std::string text, float PosX, float PosY, SDL_Color color);
+    SDL_Point setText(TTF_Font *font, std::string text, float PosX, float PosY, SDL_Color color, bool isRight);
 
     //getter
     SDL_Renderer* getRenderer() { return renderer; }
@@ -46,13 +47,16 @@ public:
     void setScore(int score) { this->score = score; };
     //获取分数
     int getScore() {return score; };
+    //获取排名
+    std::multimap<int, std::string, std::greater<int>> getRank() { return rank; };
+    void insertRank(int score, std::string name);
+    void saveData();
+    void loadData();
 
     //设置字体
     TTF_Font* fontTitle;
     TTF_Font* fontText;
 
-    //排名
-    std::map<int, std::string, std::greater<int>> rank;
 private:
     Game();
     Game(const Game&) = delete;
@@ -74,7 +78,8 @@ private:
     float deltaTime = 0;
     //分数,以及getset方法
     int score = 0; //设置分数
-
+    //排名
+    std::multimap<int, std::string, std::greater<int>> rank;
 
     void updateBackground(float deltaTime);
     void renderBackground();

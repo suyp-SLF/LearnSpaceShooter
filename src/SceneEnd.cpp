@@ -1,10 +1,13 @@
 #include "SceneEnd.h"
+#include "SceneMain.h"
 #include "Game.h"
 
 #include <SDL_ttf.h>
+#include <string>
 
 void SceneEnd::init()
 {
+    game.loadData();
     // 判断是否打开文字输入模式
     if (!SDL_IsTextInputActive())
     {
@@ -40,6 +43,7 @@ void SceneEnd::render()
 
 void SceneEnd::clean()
 {
+    game.saveData();
 }
 
 void SceneEnd::handleEvent(SDL_Event *event)
@@ -55,11 +59,22 @@ void SceneEnd::handleEvent(SDL_Event *event)
         if (event->type == SDL_KEYDOWN && event->key.keysym.sym == SDLK_RETURN)
         {
             typing = false;
+            if(name.empty()){
+                game.insertRank(game.getScore(), "匿名");
+            }else{
+                game.insertRank(game.getScore(), name);
+            }
         }
         // 检查是否是退格键
         if (event->type == SDL_KEYDOWN && event->key.keysym.sym == SDLK_BACKSPACE)
         {
             removeLastUTF8Char(name);
+        }
+    }else{
+        //为J键重新开始
+        if (event->type == SDL_KEYDOWN && event->key.keysym.sym == SDLK_j)
+        {
+            game.changeScene(new SceneMain());
         }
     }
 }
@@ -78,6 +93,35 @@ void SceneEnd::renderPhase1()
 
 void SceneEnd::renderPhase2()
 {
+    //根据multmap显示得分榜
+    SDL_Color color = {255, 255, 255, 255}; // 白色
+    game.setCenterText(game.fontText, "得分榜", 0.1, color);
+    int i = 1;
+    for (auto item: game.getRank())
+    {
+        std::string name = std::to_string(i) + "." + item.second;
+        std::string score = std::to_string(item.first);
+        //左靠齐位置
+
+        game.setText(
+            game.fontText, 
+            name, 
+            100, 
+            game.getWindowHeight() * 0.2 + (30 * i), 
+            color
+        );
+        //右靠齐位置
+        game.setText(
+            game.fontText, 
+            score, 
+            game.getWindowWidth() - 100, 
+            game.getWindowHeight() * 0.2 + (30 * i), 
+            color, 
+            true
+        );
+        i++;
+    }
+    game.setCenterText(game.fontText, "请按J键重新开始", 0.7, color);
 }
 
 void SceneEnd::removeLastUTF8Char(std::string &str)

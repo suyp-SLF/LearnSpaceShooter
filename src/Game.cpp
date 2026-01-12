@@ -5,7 +5,57 @@
 #include <SDL_image.h>
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
+#include <fstream>
 
+void Game::insertRank(int score, std::string name)
+{
+    rank.insert({score, name});
+}
+void Game::saveData()
+{
+    // std::ios::out 是默认的，会覆盖旧文件
+    std::ofstream file("assets/rank.dat", std::ios::out);
+    
+    if (!file.is_open())
+    {
+        SDL_Log("无法打开存档文件进行写入！请检查 assets 目录是否存在。");
+        return;
+    }
+
+    // 假设 rank 是 std::map<int, std::string> 或 multimap
+    // 逆向迭代保存：分数高的排在前面
+    for (auto it = rank.rbegin(); it != rank.rend(); ++it)
+    {
+        file << it->first << " " << it->second << "\n";
+    }
+    
+    file.close();
+    SDL_Log("游戏数据已保存。");
+}
+
+void Game::loadData()
+{
+    std::ifstream file("assets/rank.dat");
+    
+    if (!file.is_open())
+    {
+        SDL_Log("未发现存档文件，将开始新纪录。");
+        return; // 不需要手动创建，保存时会自动创建
+    }
+
+    rank.clear(); // 读取前清空当前排行榜，防止重复叠加
+    int score;
+    std::string name;
+    
+    // 使用 while(file >> score >> name) 是正确的，会自动处理空格和换行
+    while (file >> score >> name)
+    {
+        rank.insert({score, name});
+    }
+
+    file.close();
+    SDL_Log("成功加载 %lu 条纪录。", rank.size());
+}
 Game::Game()
 {
 }
@@ -265,4 +315,25 @@ SDL_Point Game::setText(TTF_Font *font, std::string text, float PosX, float PosY
     SDL_DestroyTexture(texture);
     SDL_FreeSurface(surface);
     return {rect.x, rect.y};
+}
+
+SDL_Point Game::setText(TTF_Font *font, std::string text, float PosX, float PosY, SDL_Color color, bool isRight)
+{
+    if (isRight)
+    {
+        SDL_Surface *surface = TTF_RenderUTF8_Solid(font, text.c_str(), color);
+        SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_Rect rect;
+        SDL_QueryTexture(texture, NULL, NULL, &rect.w, &rect.h);
+        rect.x = PosX - surface->w;
+        rect.y = PosY;
+        SDL_RenderCopy(renderer, texture, NULL, &rect);
+        SDL_DestroyTexture(texture);
+        SDL_FreeSurface(surface);
+        return {rect.x, rect.y};
+    }
+    else
+    {
+        return setText(font, text, PosX, PosY, color);
+    }
 }
